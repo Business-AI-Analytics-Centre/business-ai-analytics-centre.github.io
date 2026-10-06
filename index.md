@@ -133,15 +133,33 @@ permalink: /
   </div>
 </section>
 
-<section class="home-cta" aria-labelledby="conversation-heading">
-  <div class="home-cta-inner">
-    <div>
+<section class="section-wrap conversation-section" aria-labelledby="conversation-heading">
+  <div class="conversation-card">
+    <div class="conversation-intro">
       <p class="eyebrow">05 · Get involved</p>
       <h2 id="conversation-heading">Start the Conversation</h2>
-      <p>The Centre welcomes engagement from academics, doctoral students, businesses, professional bodies, technology partners, public-sector organisations and policymakers.</p>
-      <p>Whether you are interested in collaborative research, applying AI within your organisation, developing new analytical capabilities or discussing future opportunities, we would be delighted to hear from you.</p>
+      <p>The Business AI and Analytics Centre (BAIAC) welcomes engagement from academics, businesses, public-sector organisations, technology partners, students, and prospective collaborators.</p>
+      <p>We are interested in conversations about artificial intelligence, analytics, organisational transformation, decision making, innovation, research collaboration, seminars, workshops, and the future of business.</p>
+      <p>Whether you are exploring a collaborative research project, industry partnership, student opportunity, speaking engagement, or broader discussion about AI and analytics, we would be delighted to hear from you.</p>
     </div>
-    <a class="button button-outline" href="{{ '/contact/' | relative_url }}">Contact the Centre <span aria-hidden="true">→</span></a>
+    <div class="conversation-grid">
+      <article class="conversation-mini-card">
+        <h3>Research Collaboration</h3>
+        <p>Connect with researchers across accounting, analytics, information systems, finance, marketing, operations research and management.</p>
+      </article>
+      <article class="conversation-mini-card">
+        <h3>Industry &amp; Public Sector</h3>
+        <p>Explore partnerships, workshops, executive engagement and real-world applications of AI and analytics.</p>
+      </article>
+      <article class="conversation-mini-card">
+        <h3>Students &amp; Early Career Researchers</h3>
+        <p>Learn about doctoral opportunities, seminars, projects and research activities.</p>
+      </article>
+    </div>
+    <div class="conversation-action">
+      <a class="conversation-button" href="https://forms.cloud.microsoft/e/3YCY0jLvcc" target="_blank" rel="noopener noreferrer">Start the Conversation <span aria-hidden="true">→</span></a>
+      <p class="conversation-note">All enquiries are reviewed by the Centre and directed to the most appropriate member of the BAIAC community.</p>
+    </div>
   </div>
 </section>
 
