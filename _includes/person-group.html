@@ -1,0 +1,28 @@
+{% assign group_people = site.data.people | where: "group", include.group | sort_natural: "name" %}
+<section class="baiac-people-group" aria-labelledby="group-{{ include.group | slugify }}">
+  <h2 id="group-{{ include.group | slugify }}">{{ include.group }}</h2>
+  {% if group_people.size > 0 %}
+  <div class="baiac-grid baiac-grid--people">
+    {% for person in group_people %}
+    <article class="baiac-person-card">
+      <img class="baiac-person-card__image" src="{% if person.photo != empty %}{{ person.photo | relative_url }}{% else %}{{ '/assets/images/profile-placeholder.svg' | relative_url }}{% endif %}" alt="" loading="lazy" width="160" height="160">
+      <div class="baiac-person-card__details">
+        <h3>{{ person.name | escape }}</h3>
+        {% if person.role != empty %}<p class="baiac-person-card__role">{{ person.role | escape }}</p>{% endif %}
+        {% if person.affiliation != empty %}<p>{{ person.affiliation | escape }}</p>{% endif %}
+        {% if person.research_area != empty %}<p class="baiac-person-card__area">{{ person.research_area | escape }}</p>{% endif %}
+        {% if person.website != empty %}
+        <a class="baiac-text-link" href="{{ person.website | escape }}" rel="external">Profile <span aria-hidden="true">↗</span></a>
+        {% else %}
+        <span class="baiac-person-card__pending">Profile link to be added</span>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% elsif include.group == "External Collaborators" %}
+  <div class="baiac-grid baiac-grid--people">
+    <p class="baiac-note">External collaborators will be listed here when current affiliations are confirmed.</p>
+  </div>
+  {% endif %}
+</section>

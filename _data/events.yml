@@ -1,0 +1,12 @@
+upcoming:
+  - title: Upcoming seminar series
+    date: ""
+    location: ""
+    description: Add a confirmed date, speaker and event details before publishing.
+    placeholder: true
+past:
+  - title: Past event archive
+    date: ""
+    location: ""
+    description: Add an event here after it has taken place.
+    placeholder: true
