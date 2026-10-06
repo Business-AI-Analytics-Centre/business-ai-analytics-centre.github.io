@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'en-GB' | replace: '_', '-' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Business AI and Analytics Centre home">
+        <span class="brand-mark" aria-hidden="true">BAIAC</span>
+        <span class="brand-name">Business AI and<br>Analytics Centre</span>
+      </a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        {% for item in site.data.navigation.main %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand brand-footer" href="{{ '/' | relative_url }}" aria-label="Business AI and Analytics Centre home">
+        <span class="brand-mark" aria-hidden="true">BAIAC</span>
+        <span class="brand-name">Business AI and<br>Analytics Centre</span>
+      </a>
+      <p>A research community at<br>Durham University Business School.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        {% for item in site.data.navigation.main %}
+          {% unless item.title == "Home" %}
+        <a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+          {% endunless %}
+        {% endfor %}
+      </nav>
+      <a class="university-link" href="https://www.durham.ac.uk/business/">Durham University<br>Business School <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{ site.time | date: "%Y" }} Durham University Business School</span>
+      <span>Business AI and Analytics Centre</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -297,7 +297,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-include-cache
   liquid (~> 4.0.4)
 
 CHECKSUMS

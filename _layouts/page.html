@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="section-wrap page-hero-inner">
+    <p class="eyebrow">Durham University Business School</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.excerpt %}<p>{{ page.excerpt | markdownify | strip_html | escape }}</p>{% endif %}
+  </div>
+</section>
+
+<div class="section-wrap page-content">
+  {{ content }}
+</div>
