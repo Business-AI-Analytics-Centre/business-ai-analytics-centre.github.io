@@ -5,6 +5,8 @@ main:
     url: /research/
   - title: People
     url: /people/
+  - title: Partners
+    url: /partners/
   - title: Events
     url: /events/
   - title: Contact

@@ -1,12 +1,23 @@
 upcoming:
+  - title: "2027 INFORMS Applied Probability Society Conference"
+    date: "12–15 July 2027"
+    location: "Durham University Business School"
+    description: "The premier international conference in applied probability, bringing together researchers and practitioners from around the world to discuss stochastic modelling, optimisation, queueing systems, machine learning, simulation, and data-driven decision making."
+    url: "https://informs-aps.webspace.durham.ac.uk/"
+    featured: true
   - title: Upcoming seminar series
     date: ""
     location: ""
     description: Add a confirmed date, speaker and event details before publishing.
     placeholder: true
 past:
-  - title: Past event archive
-    date: ""
-    location: ""
-    description: Add an event here after it has taken place.
-    placeholder: true
+  - title: "Accounting Information Systems, Artificial Intelligence, FinTech, Blockchain & Big Data Analytics Challenges and Opportunities"
+    date: "16–17 September 2026"
+    location: "Durham University Business School"
+    description: "The 73rd World Continuous Auditing & Reporting Symposium (WCARS) and the 4th BAFA Accounting Information Systems & Emerging Technologies (AISET) Special Interest Groups conference. The event brought together researchers and practitioners to discuss technology in auditing and reporting, including AI, FinTech, blockchain and big data analytics."
+    url: "https://www.durham.ac.uk/business/news-and-events/events/2026/09/baia-conference/"
+  - title: "Waiting List Conference 2026: From Backlog to Breakthrough"
+    date: "16–17 September 2026"
+    location: "Wellcome Trust, London"
+    description: "A national conference hosted by The Strategy Unit and Health Data Research UK, bringing together patients, analysts, clinicians, researchers, policymakers and system leaders to explore how evidence, analytics and innovation can improve access to care and reduce waiting times."
+    url: "https://www.strategyunitwm.nhs.uk/news/waiting-list-conference-2026-backlog-breakthrough"

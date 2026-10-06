@@ -91,10 +91,24 @@ permalink: /
   </article>
 </section>
 
+<section class="section-wrap news-section featured-event-section" aria-labelledby="featured-event-heading">
+  <div class="section-heading news-heading">
+    <div>
+      <div class="section-label"><span>04</span> Featured Event</div>
+      <h2 id="featured-event-heading">2027 INFORMS Applied Probability Society Conference</h2>
+    </div>
+  </div>
+  <article class="featured-event-card">
+    <p class="featured-event-meta">12–15 July 2027 <span aria-hidden="true">·</span> Durham University Business School</p>
+    <p>The premier international conference in applied probability, bringing together researchers and practitioners from around the world to discuss stochastic modelling, optimisation, queueing systems, machine learning, simulation, and data-driven decision making.</p>
+    <a class="button button-dark" href="https://informs-aps.webspace.durham.ac.uk/" target="_blank" rel="noopener noreferrer">Learn More <span aria-hidden="true">→</span></a>
+  </article>
+</section>
+
 <section class="section-wrap news-section" aria-labelledby="themes-heading">
   <div class="section-heading news-heading">
     <div>
-      <div class="section-label"><span>04</span> Research themes</div>
+      <div class="section-label"><span>05</span> Research themes</div>
       <h2 id="themes-heading">Where our research concentrates</h2>
     </div>
     <p>Connected areas of enquiry support a wider conversation about the future of business.</p>
@@ -136,7 +150,7 @@ permalink: /
 <section class="section-wrap conversation-section" aria-labelledby="conversation-heading">
   <div class="conversation-card">
     <div class="conversation-intro">
-      <p class="eyebrow">05 · Get involved</p>
+      <p class="eyebrow">06 · Get involved</p>
       <h2 id="conversation-heading">Start the Conversation</h2>
       <p>The Business AI and Analytics Centre (BAIAC) welcomes engagement from academics, businesses, public-sector organisations, technology partners, students, and prospective collaborators.</p>
       <p>We are interested in conversations about artificial intelligence, analytics, organisational transformation, decision making, innovation, research collaboration, seminars, workshops, and the future of business.</p>
@@ -166,7 +180,7 @@ permalink: /
 <section class="section-wrap news-section" aria-labelledby="news-heading">
   <div class="section-heading news-heading">
     <div>
-      <div class="section-label"><span>06</span> From the Centre</div>
+      <div class="section-label"><span>07</span> From the Centre</div>
       <h2 id="news-heading">News &amp; Events</h2>
     </div>
     <p>Updates, seminars and opportunities to meet the Centre.</p>
@@ -183,12 +197,14 @@ permalink: /
     {% for event in site.data.events.upcoming %}
     {% unless event.placeholder %}
     {% assign has_upcoming_events = true %}
+    {% unless event.featured %}
     <article class="news-card">
       <p class="card-index">UPCOMING EVENT</p>
       <h3>{{ event.title }}</h3>
       {% unless event.date == blank %}<p>{{ event.date }}{% unless event.location == blank %} · {{ event.location }}{% endunless %}</p>{% endunless %}
       <p>{{ event.description }}</p>
     </article>
+    {% endunless %}
     {% endunless %}
     {% endfor %}
     {% unless has_upcoming_events %}

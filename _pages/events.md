@@ -18,6 +18,7 @@ The Centre convenes talks, seminars and workshops to share research and exchange
     {% if event.date != empty %}<p class="baiac-event-card__meta">{{ event.date | escape }}</p>{% endif %}
     {% if event.location != empty %}<p class="baiac-event-card__meta">{{ event.location | escape }}</p>{% endif %}
     <p>{{ event.description | escape }}</p>
+    {% if event.url != empty %}<p><a class="text-link" href="{{ event.url | escape }}" target="_blank" rel="noopener noreferrer">Learn More <span aria-hidden="true">↗</span></a></p>{% endif %}
   </article>
   {% endfor %}
 </div>
@@ -32,6 +33,7 @@ The Centre convenes talks, seminars and workshops to share research and exchange
     {% if event.date != empty %}<p class="baiac-event-card__meta">{{ event.date | escape }}</p>{% endif %}
     {% if event.location != empty %}<p class="baiac-event-card__meta">{{ event.location | escape }}</p>{% endif %}
     <p>{{ event.description | escape }}</p>
+    {% if event.url != empty %}<p><a class="text-link" href="{{ event.url | escape }}" target="_blank" rel="noopener noreferrer">Conference details <span aria-hidden="true">↗</span></a></p>{% endif %}
   </article>
   {% endfor %}
 </div>
