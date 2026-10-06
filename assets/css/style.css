@@ -218,6 +218,14 @@ h3 {
   line-height: 1.8;
 }
 
+.hero-acronym {
+  margin: -12px 0 18px;
+  color: #d9c2df;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
 .button {
   display: inline-flex;
   min-height: 49px;
@@ -1804,5 +1812,51 @@ h3 {
     grid-template-columns: 1fr;
     gap: 34px;
     padding-top: 22px;
+  }
+}
+
+.baiac-contact-form {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(280px, 1.2fr);
+  align-items: center;
+  gap: 12%;
+  margin: 38px 0 48px;
+}
+
+.baiac-contact-form h2 {
+  margin: 0 0 14px;
+  color: var(--purple-deep);
+  font-family: var(--font-display);
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1.16;
+}
+
+.baiac-contact-form > div:first-child > p:last-child {
+  color: #625d64;
+  font-size: 12px;
+}
+
+.baiac-form-placeholder {
+  display: grid;
+  min-height: 280px;
+  place-items: center;
+  padding: 24px;
+  border: 1px dashed var(--line);
+  background: white;
+  color: var(--muted);
+  text-align: center;
+}
+
+.baiac-form-placeholder p {
+  margin: 0;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .baiac-contact-form {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

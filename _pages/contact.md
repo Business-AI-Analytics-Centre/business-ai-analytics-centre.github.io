@@ -35,3 +35,14 @@ excerpt: Contact the Business AI and Analytics Centre at Durham University Busin
 </div>
 
 <p class="baiac-note">Durham University Business School’s official website provides current institutional information and contact routes.</p>
+
+<section class="baiac-contact-form" aria-labelledby="contact-form-heading">
+  <div>
+    <p class="baiac-eyebrow">Get in touch</p>
+    <h2 id="contact-form-heading">Microsoft Form coming soon</h2>
+    <p>A contact form will be available here. Until then, please use Durham University Business School’s contact routes.</p>
+  </div>
+  <div class="baiac-form-placeholder" role="region" aria-label="Space reserved for the future Microsoft contact form">
+    <p>Contact form space reserved</p>
+  </div>
+</section>
